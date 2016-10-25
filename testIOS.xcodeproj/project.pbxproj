@@ -13,6 +13,8 @@
 		172716911DBE8129003977EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172716901DBE8129003977EC /* Assets.xcassets */; };
 		172716941DBE8129003977EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172716921DBE8129003977EC /* LaunchScreen.storyboard */; };
 		1727169F1DBE8129003977EC /* testIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1727169E1DBE8129003977EC /* testIOSTests.swift */; };
+		8B7FB8091DBFAFA50029DCB6 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FB8081DBFAFA50029DCB6 /* RatingControl.swift */; };
+		8B7FB80B1DBFEB990029DCB6 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FB80A1DBFEB990029DCB6 /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		1727169A1DBE8129003977EC /* testIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1727169E1DBE8129003977EC /* testIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testIOSTests.swift; sourceTree = "<group>"; };
 		172716A01DBE8129003977EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B7FB8081DBFAFA50029DCB6 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		8B7FB80A1DBFEB990029DCB6 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				172716901DBE8129003977EC /* Assets.xcassets */,
 				172716921DBE8129003977EC /* LaunchScreen.storyboard */,
 				172716951DBE8129003977EC /* Info.plist */,
+				8B7FB8081DBFAFA50029DCB6 /* RatingControl.swift */,
+				8B7FB80A1DBFEB990029DCB6 /* Meal.swift */,
 			);
 			path = testIOS;
 			sourceTree = "<group>";
@@ -141,14 +147,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = MezcalDev;
 				TargetAttributes = {
 					172716851DBE8129003977EC = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					172716991DBE8129003977EC = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 172716851DBE8129003977EC;
 					};
 				};
@@ -197,7 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7FB80B1DBFEB990029DCB6 /* Meal.swift in Sources */,
 				1727168C1DBE8129003977EC /* ViewController.swift in Sources */,
+				8B7FB8091DBFAFA50029DCB6 /* RatingControl.swift in Sources */,
 				1727168A1DBE8129003977EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,8 +264,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -300,8 +312,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -320,6 +334,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -333,6 +348,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mezcaldev.testIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -344,6 +360,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mezcaldev.testIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -355,6 +372,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mezcaldev.testIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testIOS.app/testIOS";
 			};
 			name = Debug;
@@ -367,6 +385,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mezcaldev.testIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testIOS.app/testIOS";
 			};
 			name = Release;
@@ -390,6 +409,7 @@
 				172716A51DBE8129003977EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		172716A61DBE8129003977EC /* Build configuration list for PBXNativeTarget "testIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +418,7 @@
 				172716A81DBE8129003977EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

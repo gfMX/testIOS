@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1727168A1DBE8129003977EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172716891DBE8129003977EC /* AppDelegate.swift */; };
-		1727168C1DBE8129003977EC /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1727168B1DBE8129003977EC /* MealViewController.swift */; };
 		1727168F1DBE8129003977EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1727168D1DBE8129003977EC /* Main.storyboard */; };
 		172716911DBE8129003977EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172716901DBE8129003977EC /* Assets.xcassets */; };
 		172716941DBE8129003977EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172716921DBE8129003977EC /* LaunchScreen.storyboard */; };
 		1727169F1DBE8129003977EC /* testIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1727169E1DBE8129003977EC /* testIOSTests.swift */; };
+		8B0050AB1DC120920069485D /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1727168B1DBE8129003977EC /* MealViewController.swift */; };
 		8B7FB8091DBFAFA50029DCB6 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FB8081DBFAFA50029DCB6 /* RatingControl.swift */; };
 		8B7FB80B1DBFEB990029DCB6 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FB80A1DBFEB990029DCB6 /* Meal.swift */; };
 		8B7FB80D1DBFF9560029DCB6 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FB80C1DBFF9560029DCB6 /* MealTableViewCell.swift */; };
@@ -212,11 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B7FB80B1DBFEB990029DCB6 /* Meal.swift in Sources */,
-				1727168C1DBE8129003977EC /* MealViewController.swift in Sources */,
 				8B7FB8091DBFAFA50029DCB6 /* RatingControl.swift in Sources */,
 				1727168A1DBE8129003977EC /* AppDelegate.swift in Sources */,
 				8B7FB80F1DC004020029DCB6 /* MealTableViewController.swift in Sources */,
 				8B7FB80D1DBFF9560029DCB6 /* MealTableViewCell.swift in Sources */,
+				8B0050AB1DC120920069485D /* MealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
